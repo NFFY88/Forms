@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Forms</title>
+</head>
+
+<body>
+   <section class="one">
+      <div class="one-box">
+         <form action="#" class="one-form">
+            <div class="one-form-box">
+               <input type="text" placeholder="Логин" required>
+               <input type="password" placeholder="Пароль" required>
+            </div>
+            <button class="one-form__button">Войти</button>
+         </form>
+      </div>
+   </section>
+   <section class="two">
+      <div class="two-box">
+         <form action="#" class="two-form">
+            <div class="two-form__background">
+               <div class="two-form__header">
+                  <h3 class="two-form__head">Авторизация</h3>
+                  <a href="#" class="two-form__close">
+                     <img src="img/form2/close_button.png" alt="Close" class="two-form__close-img">
+                  </a>
+               </div>
+               <input type="text" placeholder="Логин" class="two-form__input" required>
+               <input type="password" placeholder="Пароль" class="two-form__input" required>
+               <button class="two-form__button">Войти</button>
+            </div>
+
+         </form>
+      </div>
+   </section>
+   <section class="three">
+      <div class="three-box">
+         <div class="three-left">
+            <h3 class="three__head">Адрес</h3>
+            <div class="three__line"></div>
+            <p class="three__adress">г. Париж</p>
+            <p class="three__adress">Челябинская обл.</p>
+            <p class="three__adress">пр. Монмартр 21-1</p>
+            <p class="three__adress">Василий Пупкин</p>
+         </div>
+         <div class="three-right">
+            <h3 class="three__head">Отправка сообщения</h3>
+            <div class="three__line"></div>
+            <form action="#" class="three-form">
+               <label for="three__name">Ваше имя<em>*</em></label>
+               <input type="text" id="three__name" required><br>
+               <label for="three__email">Ваш E-mail<em>*</em></label>
+               <input type="email" id="three__email" required><br>
+               <label for="three__message">Ваше сообщение<em>*</em></label>
+               <textarea name="message" id="three__message" required></textarea>
+               <button type="submit">Отправить</button>
+            </form>
+         </div>
+      </div>
+   </section>
+   <section class="four">
+      <div class="four-box four-form-background">
+         <div class="four-left">
+            <h3 class="four__head">Сообщение</h3>
+            <div class="four__line"></div>
+            <p class="four__desc four__padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Suspendisse at orci non
+               neque interdum condimentum. Donec imperdiet elementum tristique. Vestibulum ante ipsum primis in
+               faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel purus id odio posuere dictum
+               fermentum in nisi. Nulla porta elit nec velit porta gravida.</p>
+            <form action="#" class="four-form ">
+               <div class="four__container">
+                  <label for="three__name">Ваше имя <em>(Обязательно)</em>:</label>
+                  <input type="text" id="four__name" required><br>
+                  <label for="four__email">Ваш E-mail <em>(Обязательно)</em>:</label>
+                  <input type="email" id="four__email" required><br>
+                  <label for="four__message">Сообщение <em>(Обязательно)</em>:</label>
+                  <textarea name="message" id="four__message" required></textarea>
+                  <button type="submit">Отправить</button>
+               </div>
+               <p class="four__required">Обязательно к заполнению</p>
+            </form>
+         </div>
+         <div class="four-right">
+
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>

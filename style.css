@@ -1,0 +1,346 @@
+* {
+   box-sizing: border-box;
+}
+
+.one {
+   background-image: url(img/form1/bg.png);
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+}
+
+.one-box {
+   padding: 30px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.one-form {
+   background-image: url(img/form1/bg_frame.png);
+   width: 266px;
+   height: 259px;
+   padding: 89px 28px 19px;
+}
+
+.one-form-box input {
+   background-color: #E4E6E9;
+   width: 100%;
+   height: 40px;
+   font-size: 14px;
+   line-height: 16px;
+   color: #636363;
+   padding-left: 14px;
+   padding-right: 14px;
+   outline: none;
+   border: 1px solid #C9C9C9;
+}
+
+.one-form-box input:first-child {
+   border-radius: 3px 3px 0px 0px;
+}
+
+.one-form-box input:last-child {
+   border-radius: 0px 0px 3px 3px;
+}
+
+.one-form__button {
+   margin-top: 32px;
+   width: 100%;
+   background: radial-gradient(100% 100% at 55.23% 100%, #DA944D 0%, #E3B557 100%);
+   /* border: 1px solid #EAB74E; */
+   border-radius: 3px;
+   padding: 11px 0;
+   font-size: 16px;
+   line-height: 18px;
+   color: #FFFFFF;
+}
+
+.two {
+   background-image: url(img/form2/bg.png);
+   font-family: Trebuchet MS;
+   font-style: normal;
+   font-weight: normal;
+}
+
+.two-box {
+   padding: 30px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.two-form {
+   background-image: url(img/form2/bg_frame.png);
+   width: 326px;
+   height: 291px;
+   padding: 14px 36px;
+}
+
+.two-form__background {
+   background-image: url(img/form2/lights.png);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.two-form__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 62px;
+   padding-top: 17px;
+   width: 100%;
+}
+
+.two-form__head {
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   margin: 0;
+}
+
+.two-form__input {
+   border: 1px solid #7F7F7F;
+   border-radius: 6px;
+   font-size: 15px;
+   line-height: 17px;
+   padding: 8px 12px;
+   width: 100%;
+   margin-bottom: 11px;
+}
+
+.two-form__input:focus {
+   outline: none;
+}
+
+.two-form__button {
+   width: 120px;
+   height: 37px;
+   background: linear-gradient(180deg, #E1E1E1 0%, #C3C3C3 79.17%, #D2D2D2 100%);
+   border-radius: 6px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #3E3E3E;
+   margin-top: 16px;
+}
+
+.three {
+   background-image: url(img/form3/bg.png);
+   font-family: Georgia;
+   font-style: italic;
+   font-weight: normal;
+   padding: 43px 0;
+}
+
+.three-box {
+   margin: 0 auto;
+   padding: 120px 105px 0 75px;
+   display: flex;
+   justify-content: space-between;
+   background-image: url(img/form3/bg_mails.png);
+   width: 873px;
+   height: 514px;
+}
+
+.three-left {
+   width: 235px;
+}
+
+.three__head {
+   font-weight: normal;
+   text-align: left;
+   font-size: 22px;
+   line-height: 25px;
+   color: #344E78;
+   margin-bottom: 6px;
+}
+
+.three__line {
+   width: 100%;
+   height: 1px;
+   background: #D4D3D1;
+   margin-bottom: 13px;
+}
+
+.three__adress {
+   margin-bottom: 6px;
+   margin-top: 6px;
+   font-size: 16px;
+   line-height: 18px;
+   color: #545455;
+}
+
+.three-right {
+   width: 400px;
+}
+
+.three-form {
+   display: flex;
+   flex-direction: column;
+}
+
+.three-form label {
+   font-size: 13px;
+   line-height: 15px;
+   color: #545455;
+   margin-bottom: 6px;
+}
+
+.three-form input,
+.three-form textarea {
+   height: 30px;
+   background: linear-gradient(90deg, #BBBBBB 18.37%, #BDBDBD 82.86%);
+   border-radius: 3px;
+   border: none;
+   margin-bottom: 10px;
+}
+
+.three-form input:focus,
+.three-form textarea:focus {
+   outline: none;
+}
+
+#three__message {
+   height: 100px;
+   resize: none;
+}
+
+.three-form button {
+   margin-top: 5px;
+   padding: 0;
+   border: 1px solid #A56169;
+   width: 80px;
+   height: 25px;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 11px;
+   line-height: 12px;
+   text-transform: uppercase;
+   color: #A56169;
+   align-self: flex-end;
+}
+
+.four {
+   background-color: #000000;
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+   display: flex;
+   justify-content: center;
+}
+
+.four-box {
+   width: 1280px;
+   padding-top: 13px;
+   padding-bottom: 43px;
+   display: flex;
+   justify-content: space-between;
+   margin: 58px 134px 50px 50px;
+}
+
+.four-form-background {
+   background-color: #1F1F1F;
+   /* background-color: wheat; */
+}
+
+.four-left {
+   width: 590px;
+}
+
+.four__head {
+   font-family: Ubuntu;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 0;
+   margin-left: 5px;
+}
+
+.four__line {
+   height: 1px;
+   background-color: #353535;
+   margin: 7px 5px 0;
+}
+
+.four__padding {
+   padding: 0 18px;
+}
+
+.four__desc {
+   font-size: 12px;
+   line-height: 14px;
+   color: #8C8C8C;
+   margin-top: 7px;
+   margin-bottom: 15px;
+}
+
+.four-form {
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   display: flex;
+}
+
+.four__container {
+   display: flex;
+   flex-direction: column;
+   width: 340px;
+   margin-left: 18px;
+}
+
+.four-form em {
+   color: red;
+   font-style: normal;
+}
+
+.four-form label {
+   margin-bottom: 7px;
+}
+
+.four-form input,
+.four-form textarea {
+   margin-bottom: 20px;
+   background: url(img/form4/Input.png);
+   border: 1px solid #282828;
+   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 3px;
+   color: #FFFFFF;
+}
+
+.four-form input {
+   height: 30px;
+}
+
+.four-form textarea {
+   height: 175px;
+   resize: none;
+}
+
+.four-form button {
+   background: linear-gradient(261.18deg, #A4A5A6 0%, #808081 91.88%);
+   border-radius: 3px;
+   border: none;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   padding: 8px;
+   width: min-content;
+   align-self: flex-end;
+}
+
+.four-form input:focus,
+.four-form textarea:focus {
+   outline: none;
+}
+
+.four__required {
+   margin-top: 29px;
+   margin-left: 28px;
+   font-weight: normal;
+   color: #8C8C8C;
+}
