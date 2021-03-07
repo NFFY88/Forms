@@ -1,0 +1,480 @@
+* {
+   box-sizing: border-box;
+}
+
+.one {
+   background-image: url(img/form1/bg.png);
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+}
+
+.one-box {
+   padding: 30px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.one-form {
+   background-image: url(img/form1/bg_frame.png);
+   width: 266px;
+   height: 259px;
+   padding: 89px 28px 19px;
+}
+
+.one-form-box input {
+   background-color: #E4E6E9;
+   width: 100%;
+   height: 40px;
+   font-size: 14px;
+   line-height: 16px;
+   color: #636363;
+   padding-left: 14px;
+   padding-right: 14px;
+   outline: none;
+   border: 1px solid #C9C9C9;
+}
+
+.one-form-box input:first-child {
+   border-radius: 3px 3px 0px 0px;
+}
+
+.one-form-box input:last-child {
+   border-radius: 0px 0px 3px 3px;
+}
+
+/* Костыль. Убираем подсветку в FireFox при пустом поле */
+.one-form-box input:required {
+   box-shadow: none;
+}
+
+.one-form__button {
+   margin-top: 32px;
+   width: 100%;
+   background: radial-gradient(100% 100% at 55.23% 100%, #DA944D 0%, #E3B557 100%);
+   border-radius: 3px;
+   padding: 11px 0;
+   font-size: 16px;
+   line-height: 18px;
+   color: #FFFFFF;
+}
+
+.two {
+   background-image: url(img/form2/bg.png);
+   font-family: Trebuchet MS;
+   font-style: normal;
+   font-weight: normal;
+}
+
+.two-box {
+   padding: 30px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.two-form {
+   background-image: url(img/form2/bg_frame.png);
+   width: 326px;
+   height: 291px;
+   padding: 14px 36px;
+}
+
+.two-form__background {
+   background-image: url(img/form2/lights.png);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.two-form__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 62px;
+   padding-top: 17px;
+   width: 100%;
+}
+
+.two-form__head {
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   margin: 0;
+}
+
+.two-form__input {
+   border: 1px solid #7F7F7F;
+   border-radius: 6px;
+   font-size: 15px;
+   line-height: 17px;
+   padding: 8px 12px;
+   width: 100%;
+   margin-bottom: 11px;
+}
+
+.two-form__input:focus {
+   outline: none;
+}
+
+.two-form__button {
+   width: 120px;
+   height: 37px;
+   background: linear-gradient(180deg, #E1E1E1 0%, #C3C3C3 79.17%, #D2D2D2 100%);
+   border-radius: 6px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #3E3E3E;
+   margin-top: 16px;
+}
+
+.three {
+   background-image: url(img/form3/bg.png);
+   font-family: Georgia;
+   font-style: italic;
+   font-weight: normal;
+   padding: 43px 0;
+}
+
+.three-box {
+   margin: 0 auto;
+   padding: 120px 105px 0 75px;
+   display: flex;
+   justify-content: space-between;
+   background-image: url(img/form3/bg_mails.png);
+   width: 873px;
+   height: 514px;
+}
+
+.three-left {
+   width: 235px;
+}
+
+.three__head {
+   font-weight: normal;
+   text-align: left;
+   font-size: 22px;
+   line-height: 25px;
+   color: #344E78;
+   margin-bottom: 6px;
+}
+
+.three__line {
+   width: 100%;
+   height: 1px;
+   background: #D4D3D1;
+   margin-bottom: 13px;
+}
+
+.three__adress {
+   margin-bottom: 6px;
+   margin-top: 6px;
+   font-size: 16px;
+   line-height: 18px;
+   color: #545455;
+}
+
+.three-right {
+   width: 400px;
+}
+
+.three-form {
+   display: flex;
+   flex-direction: column;
+}
+
+.three-form label {
+   font-size: 13px;
+   line-height: 15px;
+   color: #545455;
+   margin-bottom: 6px;
+}
+
+.three-form input,
+.three-form textarea {
+   height: 30px;
+   background: linear-gradient(90deg, #BBBBBB 18.37%, #BDBDBD 82.86%);
+   border-radius: 3px;
+   border: none;
+   margin-bottom: 10px;
+}
+
+.three-form input:focus,
+.three-form textarea:focus {
+   outline: none;
+}
+
+#three__message {
+   height: 100px;
+   resize: none;
+}
+
+.three-form button {
+   margin-top: 5px;
+   padding: 0;
+   border: 1px solid #A56169;
+   width: 80px;
+   height: 25px;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 11px;
+   line-height: 12px;
+   text-transform: uppercase;
+   color: #A56169;
+   align-self: flex-end;
+}
+
+.four {
+   background-color: #000000;
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+   display: flex;
+   justify-content: center;
+}
+
+.four-box {
+   width: 1280px;
+   display: flex;
+   justify-content: space-between;
+   margin: 58px 134px 50px 50px;
+}
+
+.four-left {
+   width: 590px;
+}
+
+.form-box {
+   padding-top: 13px;
+   background-color: #1F1F1F;
+}
+
+.four__head {
+   font-family: Ubuntu;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 0;
+   margin-left: 5px;
+}
+
+.four__line {
+   height: 1px;
+   background-color: #353535;
+   margin: 7px 5px 0;
+}
+
+.four__desc {
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   color: #8C8C8C;
+   margin-left: 18px;
+   margin-right: 18px;
+   margin-top: 7px;
+}
+
+.message_form-container,
+.registration_form-container,
+.authorization_form-container {
+   display: flex;
+   flex-direction: column;
+   width: 340px;
+}
+
+.message_form-container button,
+.registration_form-container button {
+   align-self: flex-end;
+}
+
+#four__password {
+   margin-bottom: 15px;
+}
+
+.message_form {
+   padding-bottom: 42px;
+}
+
+.four-form-style {
+   margin-top: 16px;
+   margin-left: 18px;
+}
+
+.four-form-style label {
+   font-family: Arial;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   margin-bottom: 7px;
+}
+
+.four-form-style em {
+   color: #D20000;
+}
+
+.four-form-style input,
+.four-form-style textarea {
+   margin-bottom: 20px;
+   background: url(img/form4/Input.png);
+   border: 1px solid #282828;
+   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 3px;
+   color: #FFFFFF;
+}
+
+.four-form-style textarea {
+   height: 175px;
+   resize: none;
+}
+
+.four-form-style button {
+   background: linear-gradient(261.18deg, #A4A5A6 0%, #808081 91.88%);
+   border-radius: 3px;
+   border: none;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   padding: 8px;
+   width: 80px;
+   height: 30px;
+}
+
+.four-right {
+   width: 420px;
+}
+
+.authorization_form {
+   padding-bottom: 8px;
+}
+
+.send-box {
+   display: flex;
+   justify-content: space-between;
+}
+
+.send-box-container,
+.send-box-container a {
+   font-size: 12px;
+   line-height: 14px;
+   color: #8C8C8C;
+}
+
+.send-box-container input {
+   margin: 8px 0;
+}
+
+.four-registration_form {
+   margin-top: 33px;
+   padding-bottom: 27px;
+}
+
+.registration_form-container input {
+   margin-bottom: 16px;
+}
+
+.registration_form-container button {
+   margin-top: 46px;
+}
+
+.five {
+   background-color: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color: #545454;
+}
+
+.five-box {
+   padding: 128px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.five-form {
+   background: #FDFBFB;
+   border: 1px solid #D9D9D9;
+   box-sizing: border-box;
+   border-radius: 7px;
+   width: 304px;
+   padding: 21px 17px 31px;
+}
+
+.five-form__head {
+   font-size: 18px;
+   line-height: 21px;
+   margin-top: 0;
+   margin-bottom: 27px;
+}
+
+.five-form__field {
+   background-color: #EDEDED;
+   border: 1px solid #D0D0D0;
+   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5px;
+   width: 100%;
+   margin-bottom: 15px;
+   height: 30px;
+   font-size: 14px;
+   padding: 7px 10px;
+}
+
+.five-form-checkbox-box {
+   margin-top: 13px;
+}
+
+.five__checkbox {
+   display: none;
+}
+
+.five__checkbox+label {
+   font-size: 13px;
+   line-height: 15px;
+}
+
+.five__checkbox+label:before {
+   content: " ";
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   width: 15px;
+   height: 15px;
+   background: linear-gradient(360deg, #E7E7E7 0%, #FDFDFD 100%);
+   border: 1px solid #D0D0D0;
+   border-image: initial;
+   vertical-align: middle;
+   font-size: 24px;
+   color: #797676;
+}
+
+.five__checkbox:checked+label:before {
+   content: "•";
+}
+
+.five-form-buttons-box {
+   margin-top: 19px;
+   margin-bottom: 40px;
+}
+
+.five-form__button {
+   width: 110px;
+   height: 30px;
+   background: linear-gradient(360deg, #E7E7E7 0%, #FDFDFD 100%);
+   border: 1px solid #D0D0D0;
+   border-radius: 5px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #545454;
+   margin-right: 20px;
+}
+
+.five-form__link {
+   font-size: 12px;
+   line-height: 14px;
+   color: #545454;
+}
