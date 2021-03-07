@@ -5,6 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="style.css">
    <title>Forms</title>
@@ -18,7 +20,7 @@
                <input type="text" placeholder="Логин" required>
                <input type="password" placeholder="Пароль" required>
             </div>
-            <button class="one-form__button">Войти</button>
+            <button type="submit" class="one-form__button">Войти</button>
          </form>
       </div>
    </section>
@@ -34,9 +36,8 @@
                </div>
                <input type="text" placeholder="Логин" class="two-form__input" required>
                <input type="password" placeholder="Пароль" class="two-form__input" required>
-               <button class="two-form__button">Войти</button>
+               <button type="submit" class="two-form__button">Войти</button>
             </div>
-
          </form>
       </div>
    </section>
@@ -55,9 +56,9 @@
             <div class="three__line"></div>
             <form action="#" class="three-form">
                <label for="three__name">Ваше имя<em>*</em></label>
-               <input type="text" id="three__name" required><br>
+               <input type="text" id="three__name" required>
                <label for="three__email">Ваш E-mail<em>*</em></label>
-               <input type="email" id="three__email" required><br>
+               <input type="email" id="three__email" required>
                <label for="three__message">Ваше сообщение<em>*</em></label>
                <textarea name="message" id="three__message" required></textarea>
                <button type="submit">Отправить</button>
@@ -66,31 +67,91 @@
       </div>
    </section>
    <section class="four">
-      <div class="four-box four-form-background">
+      <div class="four-box">
          <div class="four-left">
-            <h3 class="four__head">Сообщение</h3>
-            <div class="four__line"></div>
-            <p class="four__desc four__padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Suspendisse at orci non
-               neque interdum condimentum. Donec imperdiet elementum tristique. Vestibulum ante ipsum primis in
-               faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel purus id odio posuere dictum
-               fermentum in nisi. Nulla porta elit nec velit porta gravida.</p>
-            <form action="#" class="four-form ">
-               <div class="four__container">
-                  <label for="three__name">Ваше имя <em>(Обязательно)</em>:</label>
-                  <input type="text" id="four__name" required><br>
-                  <label for="four__email">Ваш E-mail <em>(Обязательно)</em>:</label>
-                  <input type="email" id="four__email" required><br>
-                  <label for="four__message">Сообщение <em>(Обязательно)</em>:</label>
-                  <textarea name="message" id="four__message" required></textarea>
-                  <button type="submit">Отправить</button>
-               </div>
-               <p class="four__required">Обязательно к заполнению</p>
-            </form>
+            <div class="form-box four-message_form">
+               <h3 class="four__head">Сообщение</h3>
+               <div class="four__line"></div>
+               <p class="four__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at orci non
+                  neque interdum condimentum. Donec imperdiet elementum tristique. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel purus id odio posuere dictum
+                  fermentum in nisi. Nulla porta elit nec velit porta gravida.</p>
+               <form action="#" class="message_form four-form-style">
+                  <div class="message_form-container">
+                     <label for="four__name">Ваше имя <em>(Обязательно)</em>:</label>
+                     <input type="text" id="four__name" required>
+                     <label for="four__email">Ваш E-mail <em>(Обязательно)</em>:</label>
+                     <input type="email" id="four__email" required>
+                     <label for="four__message">Сообщение <em>(Обязательно)</em>:</label>
+                     <textarea name="message" id="four__message" required></textarea>
+                     <button type="submit" id="message_form-send">Отправить</button>
+                  </div>
+               </form>
+            </div>
          </div>
          <div class="four-right">
-
+            <div class="form-box four-authorization_form">
+               <h3 class="four__head">АВТОРИЗАЦИЯ</h3>
+               <div class="four__line"></div>
+               <form action="#" class="authorization_form four-form-style">
+                  <div class="authorization_form-container">
+                     <label for="authorization__login">Логин</label>
+                     <input type="text" id="authorization__login" required>
+                     <label for="authorization__password">Пароль</label>
+                     <input type="password" id="authorization__password" required>
+                     <div class="send-box">
+                        <div class="send-box-container">
+                           <input type="checkbox" name="check_remember"><span> Запомнить меня</span><br>
+                           <a href="#" class="forgot_password">Забыли пароль?</a>
+                        </div>
+                        <button type="submit" id="authorization_form-send">Войти</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="form-box four-registration_form">
+               <h3 class="four__head">РЕГИСТРАЦИЯ</h3>
+               <div class="four__line"></div>
+               <form action="#" class="registration_form four-form-style">
+                  <div class="registration_form-container">
+                     <label for="registration__login">Логин <em>(Обязательно)</em>:</label>
+                     <input type="text" id="registration__login" required>
+                     <label for="registration__password">Пароль <em>(Обязательно)</em>:</label>
+                     <input type="password" id="registration__password" required>
+                     <label for="registration__password_again">Пароль еще раз <em>(Обязательно)</em>:</label>
+                     <input type="password" id="registration__password_again" required>
+                     <label for="registration__email">E-mail <em>(Обязательно)</em>:</label>
+                     <input type="email" id="registration__email" required>
+                     <label for="registration__tel">Телефон:</label>
+                     <input type="text" id="registration__tel">
+                     <div class="send-box-container">
+                        <input type="checkbox" name="agree" required><span> Я прочитал и согласен <a href="#">с
+                              условиями использования</a></span>
+                     </div>
+                     <button type="submit" id="registration_form-send">Отправить</button>
+                  </div>
+               </form>
+            </div>
          </div>
+      </div>
+   </section>
+   <section class="five">
+      <div class="five-box">
+         <form action="#" class="five-form">
+            <h3 class="five-form__head">Авторизация</h3>
+            <input type="text" placeholder="Имя пользователя" class="five-form__field" required>
+            <input type="password" placeholder="Пароль" class="five-form__field" required>
+            <div class="five-form-checkbox-box">
+               <input type="checkbox" id="remember" class="five__checkbox">
+               <label for="remember"> Запомнить меня</label>
+            </div>
+            <div class="five-form-buttons-box">
+               <button type="submit" class="five-form__button">Войти</button>
+               <button type="reset" class="five-form__button">Отмена</button>
+            </div>
+            <a href="#" class="five-form__link">Забыли пароль?</a><br>
+            <a href="#" class="five-form__link">Регистрация</a>
+         </form>
       </div>
    </section>
 </body>
